@@ -98,7 +98,7 @@ def generate_excel(data_siswa, df_nilai, data_tambahan):
     font_alamat = Font(name='Times New Roman', size=11, italic=True)
 
     ws.merge_cells('A1:F1'); ws['A1'] = "MADRASAH TAKMILIYAH ULA"; ws['A1'].font = font_kop_1; ws['A1'].alignment = align_center
-    ws.merge_cells('A2:F2'); ws['A2'] = "YPI UMMU CHODIJAH"; ws['A2'].font = font_kop_2; ws['A2'].alignment = align_center
+    ws.merge_cells('A2:F2'); ws['A2'] = "UMMU CHODIJAH"; ws['A2'].font = font_kop_2; ws['A2'].alignment = align_center
     ws.merge_cells('A3:F3'); ws['A3'] = "KWANYAR BARAT BANGKALAN"; ws['A3'].font = font_kop_3; ws['A3'].alignment = align_center
     
     ws.merge_cells('A4:F4'); ws['A4'] = "Jl. Raya Kwanyar Barat Kecamatan Kwanyar Kabupaten Bangkalan Jawa Timur 69164"
@@ -308,7 +308,7 @@ def generate_pdf(data_siswa, df_nilai, data_tambahan):
 st.set_page_config(page_title="Input Raport Digital - Ummu Chodijah", layout="centered")
 
 st.title("📄 Sistem Raport Digital")
-st.write("YPI Ummu Chodijah - Kwanyar Barat Bangkalan")
+st.write("Ummu Chodijah - Kwanyar Barat Bangkalan")
 
 # --- Identitas ---
 st.header("1. Identitas Siswa")
